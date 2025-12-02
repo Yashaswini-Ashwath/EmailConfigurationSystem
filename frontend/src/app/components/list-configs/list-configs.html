@@ -1,0 +1,10 @@
+ <h2>Email Configuration List</h2>
+ <ul style="list-style-type: none; padding-left: 0;">
+      @for (c of configs(); track c.id) {
+        <li>
+          <a [routerLink]="['/detail', c.id]">
+            {{c.id}}. {{c.name}} — {{c.provider | providerName}} — {{c.watchedFolder}}
+          </a>
+        </li>
+      }
+    </ul>

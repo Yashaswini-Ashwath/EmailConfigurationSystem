@@ -1,0 +1,36 @@
+<h2>Add Email Config</h2>
+
+<form (ngSubmit)="save()">
+  <input [(ngModel)]="config.name"
+         name="name"
+         placeholder="Name"
+         required />
+
+  <input [(ngModel)]="config.watchedFolder"
+         name="folder"
+         placeholder="Watched Folder"
+         required />
+
+  <select [(ngModel)]="config.provider" name="provider" required>
+    <option [ngValue]="0">{{ 0 | providerName }}</option>
+    <option [ngValue]="1">{{ 1 | providerName }}</option>
+  </select>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="config.storeAttachments" name="attachments"/>
+    Store Attachments
+  </label>
+
+  <button type="submit" [disabled]="!config.name || !config.watchedFolder">
+    Save
+  </button>
+</form>
+
+<div [style.display]="store.successMessage() ? 'block' : 'none'" style="color: green; margin-top: 10px;">
+  {{ store.successMessage() }}
+</div>
+
+<div [style.display]="store.errorMessage() ? 'block' : 'none'" style="color: red; margin-top: 10px;">
+  {{ store.errorMessage() }}
+</div>
+

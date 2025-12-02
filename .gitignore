@@ -1,0 +1,10 @@
+# Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.vscode/
+frontend/.angular
+
+
+# .NET
+EmailConfigAPI/bin/
+EmailConfigAPI/obj/

@@ -1,0 +1,9 @@
+<h2>Config Details</h2>
+    @if (config(); as c) {
+      <p><b>Name:</b> {{c.name}}</p>
+      <p><b>Watched Folder:</b> {{c.watchedFolder}}</p>
+      <p><b>Provider:</b> {{c.provider === 0 ? 'Exchange' : 'IMAP'}}</p>
+      <p><b>Store Attachments:</b> {{c.storeAttachments ? 'Yes' : 'No'}}</p>
+    } @else {
+      <p>No configuration selected.</p>
+    }
