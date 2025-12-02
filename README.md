@@ -30,7 +30,6 @@ EMAILCONFIGURATION/
 └── EmailConfigAPI/            # ASP.NET Core backend
     ├── Controllers/           # EmailConfigsController
     ├── Models/                # AppDbContext, EmailConfiguration
-    ├── services/              # email-config.store
     ├── appsettings.json       # add frontend url here
     └── emailconfigs.db        # SQLite database
 
