@@ -30,7 +30,6 @@ EMAILCONFIGURATION/
 └── EmailConfigAPI/            # ASP.NET Core backend
     ├── Controllers/           # EmailConfigsController
     ├── Models/                # AppDbContext, EmailConfiguration
-    ├── services/              # email-config.store
     ├── appsettings.json       # add frontend url here
     └── emailconfigs.db        # SQLite database
 
@@ -81,7 +80,7 @@ dotnet run
 cd frontend
 npm install
 ng serve
-
+```
 ⚠️ Notes
 1. Change Backend URL
 Update frontend/src/environments/environment.ts:
@@ -90,11 +89,10 @@ Update frontend/src/environments/environment.ts:
 
 ## 📊 Results
 
-<p align="center">
-  <!-- Left image -->
-  <img src="assets/output1.png" alt="Output 1" width="300" style="margin-right:20px;" />
-
-  <!-- Right images stacked -->
-  <img src="assets/output2.png" alt="Output 2" width="300" style="margin-right:20px;" />
-  <img src="assets/output3.png" alt="Output 3" width="300" />
-</p>
+<table> <tr> <!-- Left: Output 1 --> <td> <img src="assets/Output1.png" alt="Output 1" width="500" /> </td>
+<!-- Right: Output 2 and 3 stacked -->
+<td>
+  <img src="assets/Output2.png" alt="Output 2" width="500" height="600"/><br/>
+  <img src="assets/Output3.png" alt="Output 3" width="500" height="600" />
+</td>
+</tr> </table>
