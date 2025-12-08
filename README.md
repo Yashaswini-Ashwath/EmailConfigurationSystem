@@ -20,7 +20,7 @@ A fullstack demo project built with **Angular 20** and **ASP.NET Core (.NET 8)**
 
 ```text
 EMAILCONFIGURATION/
-├── frontend/                  # Angular 20 app
+├── frontend/                  # Angular 21 app
 │   ├── src/app/
 │   │   ├── components/        # add-config, list-configs, detail-config
 │   │   ├── services/          # API service
