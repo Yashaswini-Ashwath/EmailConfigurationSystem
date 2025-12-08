@@ -6,7 +6,7 @@ A fullstack demo project built with **Angular 20** and **ASP.NET Core (.NET 8)**
 
 ## 🛠 Tech Stack
 
-- **Frontend**: Angular 20 (standalone components, signals)
+- **Frontend**: Angular 21 (standalone components, signals)
 - **Backend**: ASP.NET Core (.NET 8)
 - **ORM**: Entity Framework Core
 - **Database**: SQLite (local file-based)
